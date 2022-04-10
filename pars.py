@@ -77,10 +77,7 @@ def parse_block(block_content, list_bk):
         })
 
 #собственно сохраняем(кто бы мог подумать)
-#можно либо json либо csv
 def save(listen):
-    # with open ('data.json', 'w', encoding='utf-8') as file:
-    #     json.dump(listen, file, indent=4, ensure_ascii=False)
     with open(f'file.csv', 'w', encoding='utf-8', newline='') as file: #'сз1251
         writer = csv.writer(file, delimiter=' ')
         writer.writerow([
